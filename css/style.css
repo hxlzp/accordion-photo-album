@@ -1,0 +1,43 @@
+div,p,span,h1,h2,h3,h4,h5,h6,input,textarea,button,img,a,i,
+table,tbody,thead,ul,ol,li,dl,dt,dd,header,nav,section,aside,footer,address{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+img{
+    border: none;
+}
+.clear::after{
+    content: '';
+    visibility: hidden;
+    height: 0;
+    display: block;
+    clear: both;
+}
+.wrapper{
+    width: 800px;
+    height: 335px;
+    overflow: hidden;
+    margin: 20px auto;
+    border: 1px solid rebeccapurple;
+}
+.wrapper > ul{
+    width: inherit;
+    height: inherit;
+}
+.wrapper > ul > li{
+    height: inherit;
+    width: 80px;
+    float: left;
+    -webkit-transition: all 0.5s ease-in;
+        -moz-transition: all 0.5s ease-in;
+        -o-transition: all 0.5s ease-in;
+            transition: all 0.5s ease-in;
+}
+
